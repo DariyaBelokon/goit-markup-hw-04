@@ -378,10 +378,12 @@ ul {
 }
 .list-footer {
   display: flex;
+  align-items: baseline;
 }
-.footer-network {
-  padding-top: 12px;
-}
+/* Или так сдвинуть вниз список:
+ .footer-network {
+   padding-top: 12px;
+} */
 .buttons-network-footer {
   display: flex;
   justify-content: center;
