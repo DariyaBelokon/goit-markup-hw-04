@@ -17,5 +17,6 @@
   --item-flex-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   --icon-text-color: rgba(175, 177, 184, 1);
   --background-footer-icon: rgba(255, 255, 255, 0.1);
+  --light-border: rgba(238, 238, 238, 1);
 }
 
