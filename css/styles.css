@@ -338,9 +338,6 @@ ul {
   margin-right: 30px;
 }
 .item-clients:nth-child(6n) {
-  margin-right: 0;
-}
- {
   margin-right: 0px;
 }
 .item-clients:hover {
@@ -433,11 +430,13 @@ ul {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
+
   /* background-color: var(--middle-background); */
 }
 .flex-element {
-  outline: 1px solid var(--light-border);
-  flex-basis: (calc(100% - 60px) / 3);
+  border: 1px solid var(--light-border);
+  box-sizing: border-box;
+  flex-basis: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
   /* box-shadow: var(--box-shadow); */
@@ -460,10 +459,18 @@ ul {
   padding: 20px 24px;
 }
 .portfolio-btn {
-  height: 38px; 
-  margin-right: 8px;
+  /* height: 38px;  */
+  margin-right: 8px; 
   background-color: var(--middle-background);
-  font-family: inherit;
+
+}
+.portfolio-btn:nth-child(5) {
+  margin-right: 0;
+}
+.btn-menu {
+  padding: 6px 22px;
+  border: none;
+    font-family: inherit;
   border: none;
   font-weight: 500;
   font-size: 16px;
@@ -472,23 +479,8 @@ ul {
   letter-spacing: 0.03em;
   border-radius: 4px;
 }
-.btn-menu1 {
-width: 73px;
-}
-.btn-menu2 {
-width: 128px;
-}
-.btn-menu3 {
-width: 145px;
-}
-.btn-menu4 {
-width: 103px;
-}
-.btn-menu5 {
-width: 130px;
-}
-.portfolio-btn:hover,
-.portfolio-btn:focus {
+.btn-menu:hover,
+.btn-menu:focus {
   color: var(--light-text);
   background-color: var(--accent);
   box-shadow: var(--btn-shadow);
